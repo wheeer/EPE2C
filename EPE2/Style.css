@@ -35,14 +35,14 @@ h1 {
     font-size: 16px;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(34, 139, 34, 0.6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out;
     margin-bottom: 10px;
     margin-right: 10px
 }
 
     .boton-verde:hover {
-        box-shadow: 0 6px 10px rgba(34, 139, 34, 0.8);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
         transform: translateY(-2px);
     }
 
@@ -73,13 +73,32 @@ h1 {
     font-size: 16px;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out;
     margin-bottom: 10px;
     margin-right: 10px
 }
 
     .boton-rojo:hover {
-        box-shadow: 0 6px 10px rgba(255, 0, 0, 0.7);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+        transform: translateY(-2px);
+    }
+
+.boton-azul {
+    background-color: mediumblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+    margin-right: 10px
+}
+
+    .boton-azul:hover {
+        box-shadow: 0 6px 10px rgba(0 0, 0, 0.7);
         transform: translateY(-2px);
     }
