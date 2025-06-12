@@ -14,74 +14,84 @@ h1 {
 .negrita {
     font-weight: bold;
     margin-bottom: 6px;
+}
+
+/* Estilos para grupos de formulario */
+.form-group > div {
+    margin-bottom: 15px;
     display: block;
 }
 
-
-.form-group > div {
-    margin-bottom: 15px;
-}
-
-.input-texto {
+/* Estilos base para inputs y textareas */
+.input-texto,
+.form-group input,
+.form-group textarea {
+    display: block;
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 0px; 
+    border-radius: 0px;
+    margin-bottom: 15px;
     width: 250px;
     box-sizing: border-box;
 }
+/* Para inputs en Pagina4 */
+.form-group-p4 .input-texto {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.form-group-p4 .boton {
+    width: auto;
+    min-width: 250px;
+    border: 1px solid #ccc;
+}
+    .form-group-p4 .boton:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+        transform: translateY(-2px);
+        border: 1px solid white;
+    }
 
 
-/* Botones */
-.boton-verde,
-.boton-rojo,
-.boton-azul,
-.boton-negro {
+ /* Estilos base para todos los botones */
+.boton {
+    width: auto;
+    min-width: 250px;
+    border-radius: 1px;
+    border: 1px solid white;
     color: white;
     padding: 10px 20px;
-    border: none;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 0px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out;
     margin-bottom: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 
+    /* Estilos hover para todos los botones */
+    .boton:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+        transform: translateY(-2px);
+        border: 1px solid white;
+    }
+
+/* Colores específicos para cada botón */
 .boton-verde {
     background-color: forestgreen;
 }
-
-    .boton-verde:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-        transform: translateY(-2px);
-    }
 
 .boton-negro {
     background-color: black;
 }
 
-    .boton-negro:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-        transform: translateY(-2px);
-    }
-
 .boton-rojo {
     background-color: red;
 }
-
-    .boton-rojo:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-        transform: translateY(-2px);
-    }
 
 .boton-azul {
     background-color: mediumblue;
 }
 
-    .boton-azul:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-        transform: translateY(-2px);
-    }
-}

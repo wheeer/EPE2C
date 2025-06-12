@@ -29,12 +29,12 @@
         </div>
 
         <div class="form-group">
-            <asp:Button ID="btEnviar" runat="server" Text="Enviar" CssClass="boton-verde" OnClick="btEnviar_Click"/>
+            <asp:Button ID="btEnviar" runat="server" Text="Enviar" CssClass="boton boton-verde" OnClick="btEnviar_Click"/>
             <div><asp:Label ID="lbnom" runat="server" Text=" "></asp:Label></div>
             <div><asp:Label ID="lbMail" runat="server" Text=" "></asp:Label></div>
             <div><asp:Label ID="lbMensaje" runat="server" Text=" "></asp:Label></div>
-            <asp:Button ID="btLimpiar" runat="server" Text="Limpiar" CssClass="boton-verde" OnClick="btLimpiar_Click" />
-            <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton-rojo" OnClick="btVolver_Click"/>
+            <asp:Button ID="btLimpiar" runat="server" Text="Limpiar" CssClass="boton boton-verde" OnClick="btLimpiar_Click" />
+            <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton boton-rojo" OnClick="btVolver_Click"/>
         </div>
     </form>
 </body>

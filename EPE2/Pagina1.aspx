@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <link href="Style.css?v=1.1" rel="stylesheet" type="text/css" />
     <title>Página 1 - Cálculo de Notas</title>
 </head>
 <body>
@@ -38,8 +38,8 @@
 
         <div class="form-group">
             <asp:Label ID="lblResultado" runat="server" Font-Bold="true" ></asp:Label>
-            <asp:Button ID="btnCalcular" runat="server" Text="Calcular" CssClass="boton-verde" OnClick="btnCalcular_Click" />
-            <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton-rojo" OnClick="btVolver_Click"/> 
+            <asp:Button ID="btnCalcular" runat="server" Text="Calcular" CssClass="boton boton-verde" OnClick="btnCalcular_Click" />
+            <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton boton-rojo" OnClick="btVolver_Click"/> 
         </div>
         
     </form>
