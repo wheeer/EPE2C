@@ -4,31 +4,39 @@
     margin-top: 40px;
     margin-left: 20px;
 }
+
 h1 {
     font-size: 24px;
     color: black;
     font-weight: bold;
 }
+
 .negrita {
     font-weight: bold;
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
     display: block;
 }
+
+
 .form-group > div {
-        margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-.form-group input,
-.form-group textarea {
-    display: block;
+
+.input-texto {
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 15px;
+    border-radius: 0px; 
+    width: 250px;
     box-sizing: border-box;
 }
-.boton-verde {
-    background-color: forestgreen;
+
+
+/* Botones */
+.boton-verde,
+.boton-rojo,
+.boton-azul,
+.boton-negro {
     color: white;
     padding: 10px 20px;
     border: none;
@@ -38,7 +46,11 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out;
     margin-bottom: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+}
+
+.boton-verde {
+    background-color: forestgreen;
 }
 
     .boton-verde:hover {
@@ -48,16 +60,6 @@ h1 {
 
 .boton-negro {
     background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 10px;
-    margin-right: 10px
 }
 
     .boton-negro:hover {
@@ -67,16 +69,6 @@ h1 {
 
 .boton-rojo {
     background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 10px;
-    margin-right: 10px
 }
 
     .boton-rojo:hover {
@@ -86,32 +78,10 @@ h1 {
 
 .boton-azul {
     background-color: mediumblue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 10px;
-    margin-right: 10px
 }
 
     .boton-azul:hover {
-        box-shadow: 0 6px 10px rgba(0 0, 0, 0.7);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
         transform: translateY(-2px);
     }
-
-.formulario-operaciones > div {
-    margin-bottom: 20px;
-}
-
-.input-texto {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    width: 250px;
-    box-sizing: border-box;
 }
