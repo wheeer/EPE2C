@@ -28,10 +28,15 @@ namespace EPE2
         {
             Response.Redirect("Pagina3.aspx"); // Redirige al formulario de contacto
         }
-        //Boton "Formulario de Contacto"
+        //Boton "Formulario de calculadora"
         protected void btnPagina4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Pagina4.aspx"); // Redirige a la calculadora
+        }
+        //Boton "tipos de variables"
+        protected void btnPagina5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Pagina5.aspx"); // Redirige tipos de variables
         }
     }
 }

@@ -17,12 +17,12 @@
         </div>
 
         <div class="form-group-p4">
-            <asp:Label ID="Label1" runat="server" Text="1° Numero:"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="1° Número:"></asp:Label>
             <asp:TextBox ID="tbNum1" runat="server" CssClass="input-texto" />
         </div>
 
         <div class="form-group-p4">
-            <asp:Label ID="Label2" runat="server" Text="2° Numero:" ></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="2° Número:" ></asp:Label>
             <asp:TextBox ID="tbNum2" runat="server" CssClass="input-texto" />
         </div>
 
