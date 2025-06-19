@@ -13,33 +13,34 @@ namespace EPE2
         {
 
         }
-
-        protected void btnCalcular_Click(object sender, EventArgs e)
+        protected void btVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index.aspx"); //Redirige al index
+        }
+        protected void btnPagina1_Click(object sender, EventArgs e)
         {
             try
             {
-                // Separar por guiones
-                string[] partes = tfNumeros.Text.Split('-');
-                int suma = 0;
-                int cantidad = 0;
+                // Leer texto y partir por guiones
+                string input = tfNumeros.Text;
+                string[] partes = input.Split('-');
 
-                foreach (string parte in partes)
-                {
-                    int numero = int.Parse(parte.Trim());
-                    suma += numero;
-                    cantidad++;
-                }
+                // Convertir a int usando un array
+                int[] numeros = partes.Select(p => int.Parse(p.Trim())).ToArray();
 
-                double promedio = (double)suma / cantidad;
+                // Calcular suma y promedio
+                int suma = numeros.Sum();
+                double promedio = numeros.Average();
 
-                lblSuma.Text = "Suma: " + suma.ToString();
-                lblPromedio.Text = "Promedio: " + promedio.ToString("F2"); // 2 decimal
+                lblSuma.Text = "Suma: " + suma;
+                lblPromedio.Text = "Promedio: " + promedio.ToString("F1");
             }
             catch
             {
-                lblSuma.Text = "Error: Ingrese solo números separados por guiones.";
+                lblSuma.Text = "Error: Usa solo números separados por guiones (-)";
                 lblPromedio.Text = "";
             }
         }
     }
+
 }
