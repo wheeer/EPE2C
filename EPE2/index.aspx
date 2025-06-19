@@ -34,6 +34,11 @@
             <asp:Label ID="Label4" runat="server" Text="Ir a Página 4" CssClass="negrita"></asp:Label>
             <asp:Button ID="btnPagina4" runat="server" Text="Calculadora" CssClass="boton boton-azul" OnClick="btnPagina4_Click" />
         </div>
+
+        <div class="form-group">
+            <asp:Label ID="Label5" runat="server" Text="Ir a Página 4" CssClass="negrita"></asp:Label>
+            <asp:Button ID="btnPagina5" runat="server" Text="Variables" CssClass="boton boton-azul" OnClick="btnPagina4_Click" />
+        </div>
     </form>
 </body>
 </html>
