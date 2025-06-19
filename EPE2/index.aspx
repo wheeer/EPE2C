@@ -36,9 +36,14 @@
         </div>
 
         <div class="form-group">
-            <asp:Label ID="Label5" runat="server" Text="Ir a Página 4" CssClass="negrita"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="Ir a Página 5" CssClass="negrita"></asp:Label>
             <asp:Button ID="btnPagina5" runat="server" Text="Variables" CssClass="boton boton-amarillo" OnClick="btnPagina5_Click" />
         </div>
+
+        <div class="form-group">
+    <asp:Label ID="Label6" runat="server" Text="Ir a Página 6" CssClass="negrita"></asp:Label>
+    <asp:Button ID="Button1" runat="server" Text="Ejemplo array y vectores" CssClass="boton boton-rojo" OnClick="btnPagina6_Click" />
+</div>
     </form>
 </body>
 </html>
