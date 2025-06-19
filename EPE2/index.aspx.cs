@@ -37,10 +37,11 @@ namespace EPE2
         protected void btnPagina5_Click(object sender, EventArgs e)
         {
             Response.Redirect("Pagina5.aspx"); // Redirige tipos de variables
-            //Boton "tipos de variables"
+        }
+        //Boton "Ejemplo array y vectores"
         protected void btnPagina6_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Pagina6.aspx"); // Redirige tipos de variables
+            Response.Redirect("Pagina6.aspx"); // Redirige Ejemplo array y vectores
         }
     }
 }
