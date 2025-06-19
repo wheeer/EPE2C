@@ -150,13 +150,13 @@ namespace EPE2
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control lblResultado.
+        /// Control lblPromedioNotas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultado;
+        protected global::System.Web.UI.WebControls.Label lblPromedioNotas;
 
         /// <summary>
         /// Control btnCalcular.

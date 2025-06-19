@@ -4,11 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 
 namespace EPE2
 {
     public partial class Pagina1 : System.Web.UI.Page
     {
+        //método para parsear notas con coma o punto
+        private double ParseNota(string texto)
+        {
+            return double.Parse(texto.Replace(',', '.'), CultureInfo.InvariantCulture);
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,38 +25,41 @@ namespace EPE2
             try
             {
                 // Obtener valores desde los TextBox
-                double eva1 = Convert.ToDouble(txtEva1.Text);
-                double epe1 = Convert.ToDouble(txtEpe1.Text);
-                double eva2 = Convert.ToDouble(txtEva2.Text);
-                double epe2 = Convert.ToDouble(txtEpe2.Text);
-                double eva3 = Convert.ToDouble(txtEva3.Text);
-                double epe3 = Convert.ToDouble(txtEpe3.Text);
+                double eva1 = ParseNota(txtEva1.Text);
+                double epe1 = ParseNota(txtEpe1.Text);
+                double eva2 = ParseNota(txtEva2.Text);
+                double epe2 = ParseNota(txtEpe2.Text);
+                double eva3 = ParseNota(txtEva3.Text);
+                double epe3 = ParseNota(txtEpe3.Text);
 
                 // Calcular con porcentajes
-                double resultado =
-                    ((eva1 * 0.07) +
+                double promedioNotas =(
+                    (eva1 * 0.07) +
                     (epe1 * 0.07) +
                     (eva2 * 0.07) +
                     (epe2 * 0.14) +
                     (eva3 * 0.14) +
-                    (epe3 * 0.21)) / 0.7;
+                    (epe3 * 0.21)
+                    ) / 0.7;
+
+                promedioNotas = Math.Round(promedioNotas, 2);
 
                 // Mostrar resultado redondeado a 2 decimales
                 // si el resultado es mayor igual o mayor a 5
-                if (resultado >= 5)
+                if (promedioNotas >= 5)
                 {
-                    lblResultado.Text = "Eximido!!! Nota Final: " + Math.Round(resultado, 2) + ". Felicidades!!";
+                    lblPromedioNotas.Text = "Eximido!!! Nota Final: " + promedioNotas + ". Felicidades!!";
                 }
                 //si el promedio es menor a 5
                 else
                 {
-                    lblResultado.Text = "Nota de presentación: " + Math.Round(resultado, 2);
+                    lblPromedioNotas.Text = "Nota de presentación: " + promedioNotas;
                 }
             }
             //catch para manejo de errores
             catch (FormatException)
             {
-                lblResultado.Text = "Por favor, ingrese todas las notas correctamente.";
+                lblPromedioNotas.Text = "Por favor, ingrese todas las notas correctamente.";
             }
         }
         protected void btVolver_Click(object sender, EventArgs e)

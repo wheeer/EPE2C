@@ -37,7 +37,7 @@
 
         <div class="form-group">
             <asp:Label ID="Label5" runat="server" Text="Ir a Página 4" CssClass="negrita"></asp:Label>
-            <asp:Button ID="btnPagina5" runat="server" Text="Variables" CssClass="boton boton-azul" OnClick="btnPagina4_Click" />
+            <asp:Button ID="btnPagina5" runat="server" Text="Variables" CssClass="boton boton-amarillo" OnClick="btnPagina4_Click" />
         </div>
     </form>
 </body>

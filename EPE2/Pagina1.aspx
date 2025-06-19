@@ -37,7 +37,7 @@
         </div>
 
         <div class="form-group">
-            <asp:Label ID="lblResultado" runat="server" Font-Bold="true" ></asp:Label>
+            <asp:Label ID="lblPromedioNotas" runat="server" Font-Bold="true" ></asp:Label>
             <asp:Button ID="btnCalcular" runat="server" Text="Calcular" CssClass="boton boton-verde" OnClick="btnCalcular_Click" />
             <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton boton-rojo" OnClick="btVolver_Click"/> 
         </div>
