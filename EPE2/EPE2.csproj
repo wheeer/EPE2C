@@ -73,6 +73,7 @@
     <Content Include="Pagina4.aspx" />
     <Content Include="Pagina5.aspx" />
     <Content Include="Pagina6.aspx" />
+    <Content Include="Pagina7.html" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
