@@ -47,7 +47,7 @@
 
         <div class="form-group">
             <asp:Label ID="Label7" runat="server" Text="Ir a Página 7" CssClass="negrita"></asp:Label>
-            <asp:Button ID="Button2" runat="server" Text="Array list de datos personales" CssClass="boton boton-negro" OnClick="btnPagina7_Click" />
+            <asp:Button ID="btnPagina7" runat="server" Text="Array list de datos personales" CssClass="boton boton-negro" OnClick="btnPagina7_Click" />
         </div>
     </form>
 </body>
