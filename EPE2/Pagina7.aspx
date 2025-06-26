@@ -30,7 +30,24 @@
             <asp:TextBox ID="tbEdad" runat="server"></asp:TextBox>
         </div>
 
-        
+        <div class="form-group">
+            <asp:Button ID="btGuardar" runat="server" Text="Guardar" CssClass="boton boton-verde" OnClick="btGuardar_Click"/>
+         </div>
+
+        <div class="form-group">
+            <asp:Button ID="btMostrar" runat="server" Text="Mostrar" CssClass="boton boton-verde" OnClick="btMostrar_Click"/>
+        </div>
+
+        <div class="form-group">
+            <asp:Button ID="btVolver" runat="server" Text="Volver al index" CssClass="boton boton-rojo" OnClick="btVolver_Click"/>
+        </div>
+
+        <div class="form-group">
+            <asp:Label ID="Label4" runat="server" Text="Datos Guardados :"></asp:Label>
+            <asp:Label ID="lbMensaje" runat="server" Text=" "></asp:Label>
+            <asp:Label ID="lbListaDatos" runat="server" Text=" "></asp:Label>
+        </div>
+
     </form>
 </body>
 </html>
