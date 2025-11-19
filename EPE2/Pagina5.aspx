@@ -17,7 +17,7 @@
         </div>
         
         <div class="form-group">
-            <asp:Button ID="Button1" runat="server" Text="Mostrar Variables" CssClass="boton boton-verde" OnClick="btMostrar_Click" />
+            <asp:Button ID="btnMostrar" runat="server" Text="Mostrar Variables" CssClass="boton boton-verde" OnClick="btMostrar_Click" />
         </div>
 
         <div class="form-group-p4">

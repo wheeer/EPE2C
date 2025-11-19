@@ -15,7 +15,7 @@
             <h1>Juan Pablo Hernandez - Walter Hollub Rojas</h1>
             <img src="imagenes/Logo.png" alt="Logo" width="300" height="200" />
         </div>
-
+         
         <div class="form-group">
             <asp:Label ID="Label8" runat="server" Text="Calculadora de notas EVA+EPE" CssClass="negrita" ></asp:Label>
         </div>
